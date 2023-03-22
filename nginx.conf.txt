@@ -1,0 +1,60 @@
+user root;
+worker_processes  auto;
+worker_rlimit_nofile 10000000;
+
+error_log  /var/log/nginx/error.log notice;
+pid        /var/run/nginx.pid;
+
+load_module /usr/lib/nginx/modules/ngx_stream_module.so;
+events {
+    worker_connections  4096;
+}
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$proxy_add_x_forwarded_for - $http_x_forwarded_for - $http_cf_connecting_ip - $proxy_protocol_addr - $remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+    open_log_file_cache max=1000;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    include /etc/nginx/conf.d/*.conf;
+}
+
+stream {
+
+log_format proxy '$remote_addr [$time_local] '
+                 '$protocol  $bytes_sent $bytes_received '
+                 '$session_time "$upstream_addr" '
+                 '"$upstream_bytes_sent" "$upstream_bytes_received" "$upstream_connect_time"';
+
+
+open_log_file_cache max=1000;
+
+#map   {
+#    ~\bh2\b           127.0.0.1:;
+#    default           127.0.0.1:5569;
+#}
+
+#  server {
+#	  listen 443 so_keepalive=on;
+#	  proxy_pass ;
+#	  ssl_preread on;
+#  }
+  
+#  server {
+#    listen 80 so_keepalive=on;
+#    proxy_pass 127.0.0.1:880;
+#    proxy_protocol on;
+#  }
+}
