@@ -195,12 +195,6 @@ echo ""
 echo "------------------------------------------------------------"
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
-echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
-echo "   - SSH Websocket           : 80" | tee -a log-install.txt
-echo "   - SSH SSL Websocket       : 443" | tee -a log-install.txt
-echo "   - Stunnel5                : 447, 777" | tee -a log-install.txt
-echo "   - Dropbear                : 109, 143" | tee -a log-install.txt
-echo "   - Badvpn                  : 7100-7300" | tee -a log-install.txt
 echo "   - Nginx                   : 81" | tee -a log-install.txt
 echo "   - XRAY  Vmess TLS         : 443" | tee -a log-install.txt
 echo "   - XRAY  Vmess None TLS    : 80" | tee -a log-install.txt
@@ -224,8 +218,6 @@ echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Fully automatic script" | tee -a log-install.txt
 echo "   - VPS settings" | tee -a log-install.txt
 echo "   - Admin Control" | tee -a log-install.txt
-echo "   - Change port" | tee -a log-install.txt
-echo "   - Restore Data" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo ""
 echo ""
