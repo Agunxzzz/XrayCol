@@ -39,6 +39,7 @@ wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main
 #wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/update.sh"
 wget -q -O /etc/issue.net "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/issue.net"
 wget -q -O /root/versi "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/versibasic"
+wget -q -O /usr/bin/updatsc "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/update.sh"
 
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/add-ws
@@ -63,6 +64,7 @@ chmod +x /usr/bin/limit-speed
 chmod +x /usr/bin/menu-vless
 chmod +x /usr/bin/menu-vmess
 chmod +x /usr/bin/menu-ss
+chmod +x /usr/bin/updatsc
 #chmod +x /usr/bin/menu-socks
 chmod +x /usr/bin/menu-trojan
 #chmod +x /usr/bin/menu-trgo
