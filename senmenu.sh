@@ -38,6 +38,7 @@ wget -q -O /usr/bin/genssl  "https://raw.githubusercontent.com/Agunxzzz/XrayCol/
 wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/cf.sh"
 #wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/update.sh"
 wget -q -O /etc/issue.net "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/issue.net"
+wget -q -O /root/versi "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/versibasic"
 
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/add-ws
