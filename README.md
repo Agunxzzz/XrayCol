@@ -1,4 +1,4 @@
-# XrayColongan
+# Autoscript XrayColongan
 
 ## For Ubuntu 18.04 Only For First Time Installation (Update Repo) <br>
   
