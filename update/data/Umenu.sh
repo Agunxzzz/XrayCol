@@ -191,7 +191,7 @@ case $opt in
 4) clear ; menu-ss ;;
 5) clear ; tendang ;;
 6) clear ; autoreboot ;;
-7) clear ; autoreboot ;;
+7) clear ; reboot ;;
 8) clear ; restart ;;
 9) clear ; genssl ;;
 10) clear ; addhost ;;
