@@ -1,6 +1,6 @@
 # Autoscript XrayColongan
 
-## Tested on Ubuntu 20.04 Only For First Time <br>
+## Tested only on Ubuntu 20.04 <br>
   
   ```html
  apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot
