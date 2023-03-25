@@ -1,6 +1,6 @@
 # Autoscript XrayColongan
 
-## For Ubuntu 18.04 Only For First Time Installation (Update Repo) <br>
+## Tested on Ubuntu 20.04 Only For First Time <br>
   
   ```html
  apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot
