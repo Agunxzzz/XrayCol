@@ -1,4 +1,4 @@
-# Autoscript XrayColongan
+# Autoscript XrayCol
 
 ## Tested only on Ubuntu 20.04 <br>
   
