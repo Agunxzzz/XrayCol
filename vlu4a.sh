@@ -189,6 +189,11 @@ cd
 echo "1.1" >> /home/.ver
 rm -fr /root/limit
 curl -sS ifconfig.me > /etc/myipvps
+clear
+eche -e "checking update...
+sleep 1
+updatsc
+cd
 echo " "
 echo "=====================-[   THEMOON ]-===================="
 echo ""
