@@ -82,6 +82,7 @@ clear
 echo -e "${EROR} No Input Detected !"
 exit 1
 fi
+apt purge nginx nginx-common nginx-core -y
 mkdir -p /usr/bin
 rm -fr /usr/local/bin/xray
 rm -fr /usr/local/bin/stunnel
