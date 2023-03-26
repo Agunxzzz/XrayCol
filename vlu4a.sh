@@ -190,7 +190,7 @@ echo "1.1" >> /home/.ver
 rm -fr /root/limit
 curl -sS ifconfig.me > /etc/myipvps
 clear
-echo -e "checking update..."
+echo "checking update..."
 sleep 1
 updatsc
 cd
