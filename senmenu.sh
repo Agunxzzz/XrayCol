@@ -55,6 +55,7 @@ chmod +x /usr/bin/genssl
 chmod +x /usr/bin/restart
 chmod +x /usr/bin/tendang
 chmod +x /usr/bin/clearlog
+#tamnbahan
 chmod +x /usr/bin/running
 chmod +x /usr/bin/cek-trafik
 chmod +x /usr/bin/cek-speed
