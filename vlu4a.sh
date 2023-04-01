@@ -151,6 +151,7 @@ SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 2 1 * * * root /usr/bin/clearlog
 END
+echo "59 * * * * root killall /bin/bash /usr/bin/menu" >> /etc/crontab
 cat > /home/re_otm <<-END
 7
 END
