@@ -1,0 +1,26 @@
+#!/bin/bash
+domain=$(cat /etc/xray/domain)
+token=5922026926:AAE5t2CXnOOT57zWdua2wfHKKG9URGEQdP0
+chatid=1106186898
+DATE_EXEC="$(date "+%d %b %Y %H:%M")"
+tomem="$(free | awk '{print $2}' | head -2 | tail -n 1 )"
+usmem="$(free | awk '{print $3}' | head -2 | tail -n 1 )"
+cpu1="$(mpstat | awk '{print $4}' | head -4 |tail -n 1)"
+cpu2="$(mpstat | awk '{print $6}' | head -4 |tail -n 1)"
+
+persenmemori="$(echo "$usmem*100/$tomem" | bc)"
+#persencpu=
+persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)"
+kirimtele=`cat<<EOF   
+$domain
+$DATE_EXEC
+RAM = $persenmemori%
+CPU = $persencpu%
+
+EOF`
+if [ $persenmemori -gt 60 ]
+then
+    service nginx restart
+    service xray restart
+    pkill -f 'menu'
+fi
