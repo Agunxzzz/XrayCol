@@ -32,3 +32,5 @@ Ga punya domain? PM ane aja :<a href="https://t.me/Tereza11" target=”_blank”
 <br>
 ## GRATIS
 ![logo](https://github.com/Agunxzzz/XrayCol/raw/main/2023_03_26_10_21_02.jpg)
+
+*ada sedikit harga untuk setiap perbuatan*
