@@ -41,6 +41,7 @@ wget -q -O /etc/issue.net "https://raw.githubusercontent.com/Agunxzzz/XrayCol/ma
 wget -q -O /root/versi "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/versibasic"
 wget -q -O /usr/bin/updatsc "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/update.sh"
 
+#permission
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
