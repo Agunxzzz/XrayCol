@@ -1,4 +1,5 @@
 clear
+#Minacantik
 export LANG='en_US.UTF-8'
 export LANGUAGE='en_US.UTF-8'
 export RED='\033[0;31m'
