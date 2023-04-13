@@ -62,10 +62,9 @@ cat > /etc/xray/config.json << END
       "settings": {
             "clients": [
                {
-                 "id": "${uuid}",
+                 "id": "3311d893-72ea-4e02-b64d-71b7aadddf76",
                  "alterId": 0
 #vmess
-},{"id": "minacantik","alterId": 0
              }
           ]
        },
